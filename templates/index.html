@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Find-a-Film</title>
+<title>Movies Database</title>
 </head>
   <body>
   {% extends "layout.html" %}
@@ -20,6 +20,12 @@
               <p class="card-text">{{movie['Title']}} - {{movie['Year']}}</p>
             </div>
         </div>
+
+        <div class="randomMovies">
+        <p>Need some help choosing what to watch?<br>
+        <br>Try our random movies generator <a href="MoviesGenerator.html">here</a>.</p>
+        </div>
+        
   {% endfor %}
 
   {% endblock %}
