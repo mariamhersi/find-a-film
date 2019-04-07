@@ -13,22 +13,28 @@
     <input type="Submit" value="Search">
   </form>
 
-  {% for movie in movies %}
-        <div class="card" style="width: 18rem;">
-            <img src="{{ movie['Poster'] }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">{{movie['Title']}} - {{movie['Year']}}</p>
-            </div>
-        </div>
+  <div class="randomMovies">
+    <p>Need some help choosing what to watch?<br>
+      <br>Try our random movies generator <a href="MoviesGenerator.html">here</a>.</p>
+  </div>
 
-        <div class="randomMovies">
-        <p>Need some help choosing what to watch?<br>
-        <br>Try our random movies generator <a href="MoviesGenerator.html">here</a>.</p>
-        </div>
-        
-  {% endfor %}
+  <div class="container">
 
-  {% endblock %}
+    <div class="row">
+        {% for movie in movies %}
+        <div class="col-sm">
+          <div class="card" style="width: 14rem;">
+              <img src="{{ movie['Poster'] }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">{{movie['Title']}} - {{movie['Year']}}</p>
+              </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}
 
   </body>
 </html>

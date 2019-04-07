@@ -14,7 +14,8 @@ def index():
     #else:
         # search = "star wars"
         #return render_template("error.html")
-        response = apirequest.get("http://www.omdbapi.com/?apikey=39907301&s={search}")
+        # response = apirequest.get("http://www.omdbapi.com/?apikey=39907301&s=batman")
+        response = apirequest.get("http://www.omdbapi.com/?apikey=39907301&s=%s" % search)
         data = response.json()
         movies = data["Search"]
         return render_template("index.html", movies=movies)
@@ -23,7 +24,6 @@ def index():
 
 #@app.route("/<movie_name>")
 #def display_movie_data(movie_name):
-
 
 
 
