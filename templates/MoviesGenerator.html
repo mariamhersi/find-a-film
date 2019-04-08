@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Film Finder </title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
 <title>Random Movies Generator</title>
 </head>
+
   <body>
-    <h1>Random Movies Generator</h1>
-    <p>Can't decide on a film? Try the random movies generator button below, which will give you a movie from <strong>imdb's top 250 movies</strong> list:</p>
-    <div id="MovieDisplay">
-      <!--Thriller Movies will display here-->
+    <div class="section-heading">
+  <div class="home-section text-center bg-gray">
+
+    <div class="slogan">
+      <h2>Random Movies <span class="text_color">Generator</span> </h2>
+      <h4>Connecting you with the best movies around</h4>
     </div>
+
+    <p>Can't decide on a film? Try the random movies generator button below, which will give you a movie from <strong>IMDB's Top 250 movies</strong> list:</p>
+  <br>  <div id="MovieDisplay">
+      <!--Thriller Movies will display here-->
+    </div> </br>
     <button onclick="newMovie()">Random Movie</button>
 
-
+  </div>
     <script src="javascript.js"></script>
 
+</div>
   </body>
 </html>

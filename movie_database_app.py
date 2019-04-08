@@ -18,7 +18,7 @@ def index():
         response = apirequest.get("http://www.omdbapi.com/?apikey=39907301&s=%s" % search)
         data = response.json()
         movies = data["Search"]
-        return render_template("index.html", movies=movies)
+        return render_template("index 2.html", movies=movies)
 #else:
         #return "hi"
 
