@@ -13,7 +13,10 @@ var quotes = [
   'The Lord of the Rings: The Return of the King',
   'Pulp fiction',
   'Schindlers List',
-  'Fight Club'
+  'Fight Club',
+  'Code First Girls',
+  'Avengers End Game'
+
 ]
 
 function newMovie() {
